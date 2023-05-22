@@ -1,0 +1,71 @@
+<html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<head>
+  <!-- Basic Information -->
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="IE=Edge">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>Azure AI Service</title>
+  <!-- StyleSheet -->
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css">
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML"
+    type="text/javascript">
+      MathJax.Hub.Config({
+        HTML: ["input/TeX", "output/HTML-CSS"],
+        TeX: {
+          Macros: {
+            bm: ["\\boldsymbol{#1}", 1]
+          },
+          extensions: ["AMSmath.js", "AMSsymbols.js", "color.js"],
+          equationNumbers: { autoNumber: "AMS" }
+        },
+        extensions: ["tex2jax.js"],
+        jax: ["input/TeX", "output/HTML-CSS"],
+        tex2jax: {
+          inlineMath: [['$', '$'], ["\\(", "\\)"]],
+          displayMath: [['$$', '$$']],
+          processEscapes: true
+        },
+        "HTML-CSS": {
+          availableFonts: ["TeX"],
+          linebreaks: { automatic: true }
+        }
+      });
+    </script>
+</head>
+
+<body>
+
+  <h1 align="center">Azure AI Service</h1>
+  <div class="dialogZone">
+    <div id="yourPrompt"></div>
+    <div id="aiTag"></div>
+    <div id="aiResponse"></div>
+
+    <div class="formarea">
+      <textarea rows="16" cols="25" id="userInput" onkeyup="inputCheck()"></textarea><br>
+      <button id="submitButton" class="submitButton">送信</button>
+    </div>
+  </div>
+
+  <div class="property">
+    <h3 align="center">property</h3>
+    Model: gpt3.5-turbo<br>
+    Temperature：<br>
+    <input type="range" name="temperature" min="0" max="10">
+    Max tokens：<br>
+    <input type="range" name="max_tokens" min="0" max="4000">
+  </div>
+
+
+
+  <div id="textcheck" class="textcheck"></div>
+  <script src="main.js"></script>
+</body>
+
+</html>

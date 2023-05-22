@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #042141;
+  /* 背景色を設定 */
+  font-family: 'Courier New', Courier, monospace;
+  /* フォントを設定 */
+  font-size: 20px;
+  /* フォントサイズを設定 */
+  color: #fff;
+  /* 文字色を設定 */
+}
+
+
+
+textarea:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+
+
+
+.submitButton {
+  background-color: #5195e2;
+  border-color: aqua;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #80d4ee;
+}
+
+#aiResponse {
+  overflow-y: scroll;
+  height: 300px;
+  /* 適宜高さを設定してください */
+}
+
+
+
+
+
+
+.bcode {
+  font-family: Monaco, 'Courier New';
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: auto;
+  resize: horizontal;
+  background: #000000;
+}
+
+
+
+.dialogZone {
+  position: absolute;
+  top: 50px;
+  bottom: 2%;
+  left: 2%;
+  right: 35%;
+  border-radius: 8px;
+  opacity: 0.9;
+  background: #0a0a0a;
+  /* 黒板の色を設定 */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  /* チョークの痕跡をシミュレートする */
+  background-size: 10px 10px;
+  /* チョークの痕跡のサイズを設定 */
+  font-size: 20px;
+  /* フォントサイズを設定 */
+  line-height: 1.0em;
+  /* 行間を設定 */
+  overflow: hidden;
+  /* オーバーフローを制御 */
+  padding-left: 5px;
+  /* paddingを設定 */
+  white-space: pre-wrap;
+  /* 改行コードを保持する */
+}
+
+.property {
+  position: absolute;
+  top: 50px;
+  bottom: 2%;
+  left: 70%;
+  right: 2%;
+  border-radius: 8px;
+  background: #f47a7a;
+  opacity: 0.9;
+  /* 黒板の色を設定 */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  /* チョークの痕跡をシミュレートする */
+  background-size: 10px 10px;
+  /* チョークの痕跡のサイズを設定 */
+  font-size: 20px;
+  /* フォントサイズを設定 */
+  line-height: 1.0em;
+  /* 行間を設定 */
+  overflow: hidden;
+  /* オーバーフローを制御 */
+  padding-left: 5px;
+  /* paddingを設定 */
+  white-space: pre-wrap;
+  /* 改行コードを保持する */
+}
+
+
+.textcheck {
+  position: fixed;
+  top: 60px;
+  right: 0px;
+  width: 24.5%;
+  overflow-wrap: break-word;
+  z-index: 1;
+  border-radius: 0.5em;
+  background-color: rgb(3, 230, 154, 0.0);
+  padding: 2px 2px 2px 2px;
+}
+
+
+
+.formarea {
+  position: absolute;
+  bottom: 10px;
+  left: 2%;
+  width: 90%;
+  border-radius: 0.0em;
+  overflow-wrap: break-word
+}
+
+
+
+textarea {
+  width: 90%;
+  height: 8em;
+  line-height: 1.5em;
+  font-size: 90%;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: black;
+  border-radius: 10px;
+}
